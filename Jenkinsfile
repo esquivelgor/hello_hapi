@@ -1,11 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
-
     agent {
         docker {
-            image 'node'
-            args '-u root'
+            image 'node:14' // Use a specific version tag
         }
     }
 
